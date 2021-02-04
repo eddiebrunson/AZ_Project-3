@@ -18,6 +18,8 @@ def main(msg: func.ServiceBusMessage):
         # TODO: Get notification message and subject from database using the notification_id
         notification_query = cursor.excute("SELECT message, subject FROM notification WHERE id = {};".format(notification_id))
         # TODO: Get attendees email and name
+        cursor.execute("SELECT first_name, last_name, email FROM attendee;")
+        attendees = cursor.fetchall()
 
         # TODO: Loop through each attendee and send an email with a personalized subject
 
