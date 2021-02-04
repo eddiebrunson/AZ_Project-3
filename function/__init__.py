@@ -12,10 +12,11 @@ def main(msg: func.ServiceBusMessage):
     logging.info('Python ServiceBus queue trigger processed message: %s',notification_id)
 
     # TODO: Get connection to database
-
+    connection = psycopg2.connect(dbname="techconfdb", user="postgresAdmin@my-migration", password="pAssWoRD202", hostname="my-migration.postgres.database.azure.com")
+    cursor = connection.cursor()
     try:
         # TODO: Get notification message and subject from database using the notification_id
-
+        notification_query
         # TODO: Get attendees email and name
 
         # TODO: Loop through each attendee and send an email with a personalized subject
