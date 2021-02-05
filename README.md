@@ -63,9 +63,12 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *Azure Postgres Database* |     |              |
-| *Azure Service Bus*   |         |              |
-| ...                   |         |              |
+| *Azure Postgres Database* |  Basic   |      $25.80        |
+| *Azure Service Bus*   |      Baisc   |      $0.05        |
+| *Azure App Service*               |     B1    |        $12.41      |
+|  *Azure Storage*                     |      Basic   |            $.08                  |
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+
+> For this particular project and use-case the cost were well controlled under most basic service tiers. Although, the Azure PostgreSQL database is projected to incur the highest cost. I would recommend the Azure App Service as the cost is the lowest monthly. 
