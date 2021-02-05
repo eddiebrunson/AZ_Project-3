@@ -72,3 +72,10 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
 
 > For this particular project and use-case the cost were well controlled under most basic service tiers. Although, the Azure PostgreSQL database is projected to incur the highest cost. I would recommend the Azure App Service as the cost is the lowest monthly. 
+
+
+## Resources
+
+* Udacity Forums 
+* [Stack overflow](https://stackoverflow.com/questions/10572498/importerror-no-module-named-sqlalchemy)
+* [Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues)
